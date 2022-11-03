@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CampusSC.DiningOptionsPage"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:local="clr-namespace:CampusSC"
+             NavigationPage.HasBackButton="True"
+             FlowDirection="LeftToRight">
+             <!--ios:NavigationPage.PrefersLargeTitles="True"
+                Title="Dining Services"
+             ios:Page.LargeTitleDisplay="Always"-->
+             
+    
+    <!--<NavigationPage.TitleView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition>
+                    <RowDefinition.Height>
+                        <OnPlatform x:TypeArguments="GridLength">
+                            <On Platform="iOS">80</On>
+                            <On Platform="Android">40</On>
+                        </OnPlatform>
+                    </RowDefinition.Height>
+                </RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="4"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="FillAndExpand"
+                   FontSize="Large"
+                   TextColor="White">Dining Services</Label>
+        </Grid>
+    </NavigationPage.TitleView>-->
+    <ContentPage.Content>
+        <StackLayout Margin="3, 0, 3, 20">
+
+            <Grid Margin="-4, -8, 0, 0"
+                  RowDefinitions="Auto"
+                  ColumnDefinitions="auto">
+                <!--<Frame Padding="0"
+                       CornerRadius="25"
+                       IsClippedToBounds="True"
+                       HorizontalOptions="Center">
+                    <Image Source="arrow_back_ios_new_white_24dp.png"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       BackgroundColor="#B0D7FF">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer x:Name="TapBackArrow" 
+                                                  Tapped="TapBackArrow_Tapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Frame>-->
+
+                <!--<ImageButton x:Name="BackButton"
+                             Grid.Column="0"
+                             Source="arrow_back_ios_new_white_24dp.png"
+                             Clicked="BackButton_Clicked"
+                             BackgroundColor="#908C89"
+                             BorderColor="#B0D7bf"
+                             BorderWidth="2"
+                             CornerRadius="24"
+                             WidthRequest="48"
+                             HeightRequest="48" />-->
+
+                <Label Grid.Column="1"
+                           Text="Dining Services"
+                           HorizontalTextAlignment="Center"
+                           FontSize="Title"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+
+                <!--<Frame Padding="0"
+                       Grid.Column="5"
+                       CornerRadius="25"
+                       IsClippedToBounds="True"
+                       HorizontalOptions="Center">
+                    <Image Source="home_white_24dp.png"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           BackgroundColor="#003263">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer x:Name="TapHomePage"
+                                                  Tapped="TapHomePage_Tapped" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Frame>-->
+
+                <!--<ImageButton x:Name="HomeButton"
+                             Grid.Column="4"
+                             Source="home_white_24dp.png"
+                             Clicked="HomeButton_Clicked"
+                             BackgroundColor="#908C89"
+                             BorderColor="#B0D7bf"
+                             BorderWidth="2"
+                             CornerRadius="24"
+                             WidthRequest="48"
+                             HeightRequest="48"/>-->
+
+            </Grid>
+            <ScrollView>
+                <StackLayout>
+                    <Button x:Name="DiningServicesWeb"
+                            Text="General Information"
+                            TextTransform="None"
+                            TextColor="#003263"
+                            FontSize="Large"
+                            FontAttributes="Bold"
+                            ImageSource="baseline_info_white_24.png"
+                            Clicked="DiningServicesWeb_Clicked"
+                            BackgroundColor="#B0D7FF"
+                            BorderColor="#B0D706"
+                            BorderWidth="1"
+                            CornerRadius="5"
+                            WidthRequest="170"
+                            android:Button.UseDefaultShadow="True"
+                            HeightRequest="75"
+                            Padding="0, 0, 50, 0">
+                    </Button>
+
+                    <Button x:Name="DiningHours"
+                            Text="Location &amp; Hours"
+                            Padding="0, 0, 50, 0"
+                            TextTransform="None"
+                            TextColor="#003263"
+                            FontAttributes="Bold"
+                            FontSize="Large"
+                            ImageSource="baseline_watch_later_white_24.png"
+                            Clicked="DiningHours_Clicked"
+                            BackgroundColor="#B0D7FF"
+                            BorderColor="#B0D706"
+                            BorderWidth="1"
+                            CornerRadius="5"
+                            WidthRequest="170"
+                            HeightRequest="75"
+                            />
+
+                    <Button Text="Menus &amp; Nutrition"
+                            TextTransform="None"
+                            TextColor="#003263"
+                            FontSize="Large"
+                            FontAttributes="Bold"
+                            ImageSource="baseline_restaurant_menu_white_24.png"
+                            Clicked="Button_Clicked_1"
+                            BackgroundColor="#B0D7FF"
+                            BorderColor="#B0D706"
+                            BorderWidth="1"
+                            CornerRadius="5"
+                            WidthRequest="170"
+                            HeightRequest="75"
+                            Padding="0, 0, 50, 0"/>
+
+                    <AbsoluteLayout >
+
+                        <Grid AbsoluteLayout.LayoutBounds="0.5, 0, 790, 13.3"
+                              AbsoluteLayout.LayoutFlags="PositionProportional">
+                            <BoxView x:Name="bdGradient" Scale="6" AnchorX="2" AnchorY="0" 
+                                 AbsoluteLayout.LayoutBounds="0, 0.1, 460, 80"
+                                     AbsoluteLayout.LayoutFlags="PositionProportional">
+                                <BoxView.Background>
+                                    <LinearGradientBrush StartPoint="1,0" EndPoint="0,1">
+                                        <GradientStop Color="#003263" Offset=".25" />
+                                        <GradientStop Color="#B0D7FF" Offset=".5" />
+                                        <GradientStop Color="#FFFFFF" Offset=".75" />
+                                        <GradientStop Color="#908C89" Offset="1" />
+                                        <GradientStop Color="#FFFFFF" Offset=".75" />
+                                        <GradientStop Color="#B0D7FF" Offset=".5" />
+                                        <GradientStop Color="#003263" Offset=".25" />
+                                    </LinearGradientBrush>
+                                </BoxView.Background>
+
+                            </BoxView>
+                        </Grid>
+
+                        <Image x:Name="BearLeftPaw"
+                               Source="bear_paw_L_4c.png"
+                               WidthRequest="80"
+                               HeightRequest="80"
+                               AbsoluteLayout.LayoutBounds="0, 0, 80, 80"
+                               AbsoluteLayout.LayoutFlags="PositionProportional">
+                        </Image>
+
+                        <!--<BoxView Color="Silver"
+                                 AbsoluteLayout.LayoutBounds="80, 15, 100, 5" />
+                        <BoxView Color="Silver"
+                                 AbsoluteLayout.LayoutBounds="90, 0, 5, 65" />-->
+
+                        <ImageButton x:Name="GrubHubApp"
+                             Source="GrubHub.png"
+                             Clicked="GrubHubApp_Clicked"
+                             BackgroundColor="#B0D7FF"
+                             BorderColor="#AB0634"
+                             BorderWidth="1"
+                             CornerRadius="30"
+                             WidthRequest="80"
+                             HeightRequest="80"
+                             AbsoluteLayout.LayoutBounds="0.5, 0, 80, 80"
+                             AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+                        <Image x:Name="BearRightPaw"
+                               Source="bear_paw_R_4c.png"
+                               WidthRequest="100"
+                               HeightRequest="100"
+                               AbsoluteLayout.LayoutBounds="1, 0, 80, 80"
+                               AbsoluteLayout.LayoutFlags="PositionProportional">
+                        </Image>
+
+                    </AbsoluteLayout>
+                    <!--<Grid Margin="3, 2, 3, 0"
+              RowDefinitions="Auto"
+              ColumnDefinitions="auto, Auto">
+                <Image x:Name="ClickHere"
+                       Source="fixed_mindset_clipart_2197773.png"
+                       WidthRequest="150"
+                       HeightRequest="80"/>-->
+
+                    <!--<ImageButton x:Name="GrubHubApp"
+                             Grid.Column="1"
+                             Source="GrubHub.png"
+                             Clicked="GrubHubApp_Clicked"
+                             BackgroundColor="#B0D7FF"
+                             BorderColor="#AB0634"
+                             BorderWidth="1"
+                             CornerRadius="40"
+                             WidthRequest="80"
+                             HeightRequest="80" />-->
+
+                    <!--<Image x:Name="ClickHereRight"
+                       Grid.Column="2"
+                       Source="fixed_mindset_clipart_2197773.png"
+                       WidthRequest="155"
+                       HeightRequest="80"/>
+            </Grid>-->
+
+                    <Button x:Name="DiningFAQs"
+                            Text="FAQs"
+                            TextTransform="None"
+                            TextColor="#003263"
+                            FontSize="Large"
+                            FontAttributes="Bold"
+                            ImageSource="baseline_quiz_white_24.png"
+                            Clicked="DiningFAQs_Clicked"
+                            BackgroundColor="#B0D7FF"
+                            BorderColor="#B0D706"
+                            BorderWidth="1"
+                            CornerRadius="5"
+                            WidthRequest="170"
+                            HeightRequest="75"
+                            Padding="0, 0, 50, 0"
+                            />
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

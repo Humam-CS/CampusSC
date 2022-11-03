@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             android:ImageButton.IsShadowEnabled="True"
+             android:ImageButton.ShadowColor="Gray"
+             android:ImageButton.ShadowRadius="12"
+             android:ImageButton.ShadowOffset="10,10"
+             android:SwipeView.SwipeTransitionMode="Drag"
+             xmlns:iOS="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             iOS:NavigationPage.IsNavigationBarTranslucent="True"
+             x:Class="CampusSC.MainPage"
+             Title="Campus Services"
+             NavigationPage.HasNavigationBar="True"
+             >
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="UmaineHall.jpg"
+                   Aspect="AspectFill" />
+            <ScrollView>
+                <Grid Margin="20, 30, 22, 20"
+                  RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*" />
+                        <ColumnDefinition Width="0.5*" />
+                    </Grid.ColumnDefinitions>
+
+                    <ImageButton x:Name="MyCampusPortal"
+                                 Source="ums_web_empty.png"
+                                 Clicked="MyCampusPortal_Clicked"
+                                 BackgroundColor="#B0D7FF"
+                                 BorderColor="#AB0634"
+                                 BorderWidth="1"
+                                 CornerRadius="9"
+                                 WidthRequest="150"
+                                 HeightRequest="150"/>
+
+                    <Label Grid.Row="1"
+                           Text="myCampus Portal"
+                           FontAttributes="Bold"
+                           FontSize="Medium"
+                           HorizontalTextAlignment="Center"
+                           WidthRequest="150"
+                           HeightRequest="30"/>
+
+
+                    <ImageButton Grid.Column="1"
+                                 Source="orderorderingavailable.png"
+                                 x:Name="Dining"
+                                 Clicked="Dining_Clicked"
+                                 BackgroundColor="#B0D7FF"
+                                 BorderColor="#AB0634"
+                                 BorderWidth="1"
+                                 CornerRadius="5"
+                                 WidthRequest="150"
+                                 HeightRequest="150"
+                                 android:ImageButton.IsShadowEnabled="True"
+                                 android:ImageButton.ShadowColor="black"
+                                 android:ImageButton.ShadowRadius="12" />
+
+                    <Label Grid.Row="1"
+                           Grid.Column="1"
+                           Text="Dining"
+                           FontSize="Large"
+                           HorizontalTextAlignment="Center"
+                           FontAttributes="Bold"
+                           WidthRequest="150"
+                           HeightRequest="30" />
+
+                    <ImageButton Grid.Row="2"
+                                 x:Name="Housing"
+                                 Source="building_umaine_brick_light.png"
+                                 Clicked="Housing_Clicked"
+                                 BackgroundColor="#B0D7FF"
+                                 BorderColor="#AB0634"
+                                 BorderWidth="1"
+                                 CornerRadius="5"
+                                 WidthRequest="150"
+                                 HeightRequest="150" />
+
+                    <Label Grid.Row="3"
+                           Text="Housing"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Center"
+                           WidthRequest="150"
+                           HeightRequest="30"/>
+
+                    <ImageButton Grid.Row="2"
+                                 Grid.Column="1"
+                                 x:Name="Parking"
+                                 Source="parking_nobg_big.png"
+                                 Clicked="Parking_Clicked"
+                                 BackgroundColor="#B0D7FF"
+                                 BorderColor="#AB0634"
+                                 BorderWidth="1"
+                                 CornerRadius="9"
+                                 WidthRequest="150"
+                                 HeightRequest="150"/>
+
+                    <Label Grid.Row="3"
+                           Grid.Column="1"
+                           Text="Parking"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Center"
+                           WidthRequest="150"
+                           HeightRequest="30" />
+
+                    <ImageButton Grid.Row="4"
+                                 Source="badge.png"
+                                 x:Name="MaineCard"
+                                 Clicked="MaineCard_Clicked"
+                                 BackgroundColor="#B0D7FF"
+                                 BorderColor="#AB0634"
+                                 BorderWidth="1"
+                                 CornerRadius="5"
+                                 WidthRequest="150"
+                                 HeightRequest="150" />
+
+                    <Label Grid.Row="5"
+                           Text="Maine Card"
+                           FontSize="Large"
+                           HorizontalTextAlignment="Center"
+                           FontAttributes="Bold"
+                           WidthRequest="150"
+                           HeightRequest="30" />
+
+                    <ImageButton Grid.Row="4"
+                                 Grid.Column="1"
+                                 x:Name="HeathCenter"
+                                 Source="healthcenternobg_big.png"
+                                 Clicked="HeathCenter_Clicked"
+                                 BackgroundColor="#B0D7FF"
+                                 BorderColor="#AB0634"
+                                 BorderWidth="1"
+                                 CornerRadius="9"
+                                 WidthRequest="150"
+                                 HeightRequest="150"/>
+
+                    <Label Grid.Row="5"
+                           Grid.Column="1"
+                           Text="Cutler Health Center"
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                           HorizontalTextAlignment="Center"
+                           WidthRequest="150"
+                           HeightRequest="30"/>
+
+                    <ImageButton Grid.Row="6"
+                                 x:Name="BookStore"
+                                 Source="bookstoreOriginal_umainelogo.png"
+                                 Clicked="BookStore_Clicked"
+                                 BackgroundColor="#B0D7FF"
+                                 BorderColor="#AB0634"
+                                 BorderWidth="1"
+                                 CornerRadius="5"
+                                 WidthRequest="150"
+                                 HeightRequest="150" />
+
+                    <Label Grid.Row="7"
+                           Text="Book Store"
+                           FontSize="Large"
+                           HorizontalTextAlignment ="Center"
+                           FontAttributes="Bold"
+                           WidthRequest="150"
+                           HeightRequest="30"/>
+
+                    <ImageButton Grid.Row="6"
+                                 Grid.Column="1"
+                                 x:Name="Postal"
+                                 Source="mailingpackage_new.png"
+                                 Clicked="Postal_Clicked"
+                                 BackgroundColor="#B0D7FF"
+                                 BorderColor="#AB0634"
+                                 BorderWidth="1"
+                                 CornerRadius="9"
+                                 WidthRequest="150"
+                                 HeightRequest="150"/>
+
+                    <Label Grid.Row="7"
+                           Grid.Column="1"
+                           Text="Package &amp; Postal"
+                           FontSize="Medium"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Center"
+                           WidthRequest="150"
+                           HeightRequest="30"/>
+
+                    
+
+                    <ImageButton Grid.Row="8"
+                                 x:Name="Printing"
+                                 Source="printingadvnobg_big.png"
+                                 Clicked="Printing_Clicked"
+                                 BackgroundColor="#B0D7FF"
+                                 BorderColor="#AB0634"
+                                 BorderWidth="1"
+                                 CornerRadius="9"
+                                 WidthRequest="150"
+                                 HeightRequest="150"/>
+
+                    <Label Grid.Row="9"
+                           Text="Printing &amp; Mailing"
+                           FontAttributes="Bold"
+                           FontSize="Medium"
+                           HorizontalTextAlignment="Center"
+                           WidthRequest="150"
+                           HeightRequest="30" />
+
+                    <ImageButton Grid.Row="8"
+                                 Grid.Column="1"
+                                 x:Name="Necessities"
+                                 Source="bearwhite_big_nobg.png"
+                                 Clicked="Necessities_Clicked"
+                                 BackgroundColor="#B0D7FF"
+                                 BorderColor="#AB0634"
+                                 BorderWidth="1"
+                                 CornerRadius="9"
+                                 WidthRequest="150"
+                                 HeightRequest="150" />
+
+                    <Label Grid.Row="9"
+                           Grid.Column="1"
+                           Text="Bear Necessities"
+                           FontAttributes="Bold"
+                           FontSize="Medium"
+                           HorizontalTextAlignment="Center"
+                           WidthRequest="150"
+                           HeightRequest="30"/>
+
+                    
+
+                    
+                    <ImageButton Grid.Row="10"
+                                 Grid.Column="1"
+                                 x:Name="UsefulApps"
+                                 Source="usefulappsnobg_big.png"
+                                 Clicked="UsefulApps_Clicked"
+                                 BackgroundColor="#B0D7FF"
+                                 BorderColor="#AB0634"
+                                 BorderWidth="1"
+                                 CornerRadius="9"
+                                 WidthRequest="150"
+                                 HeightRequest="150" />
+
+                    <Label Grid.Row="11"
+                           Grid.Column="1"
+                           Text="Useful Apps"
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                           HorizontalTextAlignment="Center"
+                           WidthRequest="150"
+                           HeightRequest="30" />
+                </Grid>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

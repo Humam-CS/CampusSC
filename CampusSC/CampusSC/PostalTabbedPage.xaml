@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CampusSC.PostalTabbedPage"
+            xmlns:local="clr-namespace:CampusSC"
+            BarBackgroundColor="#B0D7FF"
+            SelectedTabColor="#003263"
+            UnselectedTabColor="#908C89"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            android:TabbedPage.IsSmoothScrollEnabled="True"
+            android:TabbedPage.IsSwipePagingEnabled="True"
+            xmlns:iOS="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+            iOS:TabbedPage.TranslucencyMode="Translucent">
+  
+    <!--Pages can be added as references or inline-->
+    <local:PackagePage Title="Website"  IconImageSource="baseline_language_white_24.png" />
+    <local:CampusAddressPage Title="Campus Address" IconImageSource="baseline_markunread_mailbox_white.png"/>
+    <local:PostalFAQsPage Title="FAQs" IconImageSource="baseline_quiz_white.png"/>
+</TabbedPage>

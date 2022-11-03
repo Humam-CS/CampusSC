@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="CampusSC.MaineCardOptionsPage">
+    <ContentPage.Content>
+        <StackLayout Margin="3, 3, 3, 20">
+            <Label Text="MaineCard"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center" />
+
+            <ScrollView>
+                <StackLayout Margin="3, 3, 3, 20">
+
+                    <Button x:Name="MaineCard_Web"
+                            Text="MaineCard WebSite"
+                            TextTransform="None"
+                            TextColor="#003263"
+                            FontSize="Large"
+                            FontAttributes="Bold"
+                            ImageSource="baseline_public_white_24.png"
+                            Clicked="MaineCard_Web_Clicked"
+                            BackgroundColor="#B0D7FF"
+                            BorderColor="#B0D7FF"
+                            BorderWidth="1"
+                            CornerRadius="5"
+                            WidthRequest="170"
+                            HeightRequest="75"
+                            Padding="0, 0, 50, 0"/>
+
+                    <Button x:Name="MaineCard_Usage"
+                            Text="MaineCard Usage"
+                            TextTransform="None"
+                            TextColor="#003263"
+                            FontSize="Large"
+                            FontAttributes="Bold"
+                            ImageSource="baseline_credit_score_white_24"
+                            Clicked="MaineCard_Usage_Clicked"
+                            BackgroundColor="#B0D7FF"
+                            BorderColor="#B0D7FF"
+                            BorderWidth="1"
+                            CornerRadius="5"
+                            WidthRequest="170"
+                            HeightRequest="75"
+                            Padding="0, 0, 50, 0"/>
+
+                    <Button x:Name="Add_Funds"
+                            Text="Add Funds"
+                            TextTransform="None"
+                            TextColor="#003263"
+                            FontSize="Large"
+                            FontAttributes="Bold"
+                            ImageSource="baseline_paid_white_24.png"
+                            Clicked="Add_Funds_Clicked"
+                            BackgroundColor="#B0D7FF"
+                            BorderColor="#B0D7FF"
+                            BorderWidth="1"
+                            CornerRadius="5"
+                            WidthRequest="170"
+                            HeightRequest="75"
+                            Padding="0, 0, 50, 0"/>
+
+                    <Button x:Name="FAQ"
+                            Text="FAQs"
+                            TextTransform="None"
+                            TextColor="#003263"
+                            FontSize="Large"
+                            FontAttributes="Bold"
+                            ImageSource="baseline_quiz_white_24.png"
+                            Clicked="FAQ_Clicked"
+                            BackgroundColor="#B0D7FF"
+                            BorderColor="#B0D7FF"
+                            BorderWidth="1"
+                            CornerRadius="5"
+                            WidthRequest="175"
+                            HeightRequest="75"
+                            Padding="0, 0, 50, 0"/>
+                    <WebView Source="https://www.youtube.com/embed/1unCssrfzJU"
+                             HeightRequest="250"
+                             HorizontalOptions="FillAndExpand"
+                             />
+                </StackLayout>
+            </ScrollView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
