@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CampusSC.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="TextColor" Value="#003263" />
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="BackgroundColor" Value="#B0D7FF" />
+                <Setter Property="BorderColor" Value="#7b97b3" />
+                <Setter Property="BorderWidth" Value="1" />
+                <Setter Property="CornerRadius" Value="5" />
+                <Setter Property="WidthRequest" Value="170" />
+                <Setter Property="HeightRequest" Value="75" />
+                <Setter Property="Padding" Value="0, 0, 50, 0" />
+                <Setter Property="TextTransform" Value="None" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

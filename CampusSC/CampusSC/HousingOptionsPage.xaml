@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:markup="clr-namespace:CampusSC.MarkupExtensions"
+             x:Class="CampusSC.HousingOptionsPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="ItemButton"
+                   TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="ContentLayout" Value="{markup:ButtonContentLayout
+                    AndroidPosition=Left,
+                    AndroidSpacing= -50,
+                    IOSPosition=Left,
+                    IOSpacing= 100}" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        
+        <StackLayout Margin="3, 3, 3, 20">
+            <Label Text="HOUSING SERVICES"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <ScrollView>
+                <RelativeLayout Margin=" 3, 0, 3, 10">
+
+                    <Button Text="General Information"
+                            x:Name="General"
+                            RelativeLayout.WidthConstraint="{ConstraintExpression 
+                        Property=Width,
+                        Type=RelativeToParent,
+                        Factor=1}"
+                            RelativeLayout.HeightConstraint="75"
+                            ImageSource="baseline_info_white_24.png"
+                            TextColor="#003263"
+                            FontSize="Large"
+                            TextTransform="None"
+                            FontAttributes="Bold"
+                            Clicked="Button_Clicked"
+                            BackgroundColor="#B0D7FF"
+                            BorderColor="#B0D7FF"
+                            BorderWidth="1"
+                            HorizontalOptions="Fill"
+                            Padding="0, 0, 50, 0"
+                            />
+                    <!--<ImageButton Source="baseline_room_service_white.png"
+                                 x:Name="GeneralImage"
+                           BackgroundColor="Black"
+                           
+                           RelativeLayout.YConstraint="{ConstraintExpression
+                        Type= RelativeToParent,
+                        ElementName= General,
+                        Property= Height,
+                        Constant= -480
+                        }"
+                           RelativeLayout.XConstraint="{ConstraintExpression
+                        Type= RelativeToParent,
+                        ElementName= General,
+                        Property= Width,
+                        Constant= -550
+                        }" />-->
+
+                    <Button Text="myHousing"
+                            x:Name="myHousing"
+                            RelativeLayout.HeightConstraint="75"
+                            RelativeLayout.WidthConstraint="{ConstraintExpression
+                                Type=RelativeToParent,
+                                Property=Width,
+                                Factor=1}"
+                            RelativeLayout.YConstraint="{ConstraintExpression
+                                Type=RelativeToView,
+                                ElementName=General,
+                                Property=Height,
+                                Constant=5}"
+                            TextTransform="None"
+                            TextColor="#003263"
+                            FontSize="Large"
+                            FontAttributes="Bold"
+                            ImageSource="baseline_apartment_white_24.png"
+                            Clicked="Button_Clicked_2"
+                            BackgroundColor="#B0D7FF"
+                            BorderColor="#B0D7FF"
+                            BorderWidth="1"
+                            CornerRadius="5"
+                            WidthRequest="170"
+                            HeightRequest="75"
+                            Padding="0, 0, 50, 0"/>
+
+
+                    <Button Text="Laundry"
+                            x:Name="Laundry"
+                            RelativeLayout.WidthConstraint="{ConstraintExpression
+                                Type=RelativeToParent,
+                                Property=Width,
+                                Factor= 1}"
+                            RelativeLayout.HeightConstraint="75"
+                            RelativeLayout.YConstraint="{ConstraintExpression
+                                Type=RelativeToView,
+                                ElementName=myHousing,
+                                Property=Height,
+                                Constant= 85}"
+                            TextColor="#003263"
+                            FontSize="Large"
+                            FontAttributes="Bold"
+                            TextTransform="None"
+                            ImageSource="baseline_local_laundry_service_white_24.png"
+                            Clicked="Button_Clicked_1"
+                            BackgroundColor="#B0D7FF"
+                            BorderColor="#B0D7FF"
+                            BorderWidth="1"
+                            CornerRadius="5"
+                            WidthRequest="170"
+                            HeightRequest="75"
+                            Padding="0, 0, 50, 0"/>   
+
+
+                    <!-- Button with Text and Icon -->
+                    <!--<Grid
+         
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        HeightRequest="70"
+                        HorizontalOptions="Fill"
+                        IsClippedToBounds="True"
+                        VerticalOptions="Center">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        --><!-- Button Control --><!--
+
+                        <Button Grid.ColumnSpan="2" BackgroundColor="#B0D7FF" CornerRadius="5">
+                            <Button.Margin>
+                                <OnPlatform x:TypeArguments="Thickness">
+                                    <On Platform="Android" Value="0" />
+                                    <On Platform="iOS" Value="0" />
+                                </OnPlatform>
+                            </Button.Margin>
+                        </Button>
+
+                        --><!-- Text Label--><!--
+
+                        <Label
+                            Grid.Column="1"
+                            Margin="0, 0, 40, 0"
+                            FontAttributes="Bold"
+                            FontSize="Large"
+                            HorizontalOptions="Center"
+                            HorizontalTextAlignment="Start"
+                            InputTransparent="True"
+                            Text="favs"
+                            TextColor="Black"
+                            VerticalOptions="Center"
+                            VerticalTextAlignment="Center" />
+
+                        --><!-- Icon Image --><!--
+                        <Image
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Margin="20, 0, 0, 0"
+                            HeightRequest="40"
+                            HorizontalOptions="End"
+                            InputTransparent="True"
+                            Source="baseline_key_white.png"
+                            VerticalOptions="Center"
+                            WidthRequest="40" />
+                    </Grid>-->
+
+                    
+
+                    <Button Text="FAQs"
+                            x:Name="FAQs"
+                            RelativeLayout.HeightConstraint="75"
+                            RelativeLayout.WidthConstraint="{ConstraintExpression
+                                Type=RelativeToParent,
+                                Property=Width,
+                                Factor=1}"
+                            RelativeLayout.YConstraint="{ConstraintExpression
+                                Type=RelativeToView,
+                                ElementName=Laundry,
+                                Property=Height,
+                                Constant=165}"
+                            FontSize="Large"
+                            TextTransform="None"
+                            FontAttributes="Bold"
+                            ImageSource="baseline_quiz_white_24.png"
+                            TextColor="#003263"
+                            Clicked="Button_Clicked_3"
+                            BackgroundColor="#B0D7FF"
+                            BorderColor="#B0D7FF"
+                            BorderWidth="1"
+                            CornerRadius="5"
+                            WidthRequest="170"
+                            HeightRequest="75"
+                            Padding="0, 0, 50, 0"/>
+
+                    <Button Text="Get Connected"
+                            x:Name="GetConnected"
+                                 RelativeLayout.HeightConstraint="75"
+                                 RelativeLayout.WidthConstraint="{ConstraintExpression
+                        Type=RelativeToParent,
+                        Property=Width,
+                        Factor=1}"
+                                 RelativeLayout.YConstraint="{ConstraintExpression
+                        Type=RelativeToView,
+                        ElementName=FAQs,
+                        Property=Height,
+                        Constant=245}"
+                            FontSize="Large"
+                            TextTransform="None"
+                            FontAttributes="Bold"
+                            ImageSource="baseline_live_tv_white_24.png"
+                            TextColor="#003263"
+                            Clicked="GetConnected_Clicked"
+                            BackgroundColor="#B0D7FF"
+                            BorderColor="#B0D7FF"
+                            BorderWidth="1"
+                            CornerRadius="5"
+                            WidthRequest="170"
+                            HeightRequest="75"
+                            Padding="0 ,0, 50, 0"/>
+
+                    <ImageButton x:Name="Stream2App"
+                            RelativeLayout.HeightConstraint="80"
+                            RelativeLayout.XConstraint="{ConstraintExpression
+                        Type=RelativeToParent,
+                        Property=Width,
+                        Constant=-40,
+                        Factor=.5
+                       }" 
+                            RelativeLayout.YConstraint="{ConstraintExpression
+                        Type=RelativeToView,
+                        ElementName=FAQs,
+                        Property=Height,
+                        Constant=325}"
+                            Source="stream2.png"
+                            Clicked="Stream2App_Clicked"
+                            BorderColor="#B0D7FF"
+                            BorderWidth="2"
+                            CornerRadius="30"
+                            WidthRequest="80"
+                            HeightRequest="80" />
+
+                    <CarouselView x:Name="Carousel"
+                                  RelativeLayout.HeightConstraint="200"
+                                  RelativeLayout.WidthConstraint="{ConstraintExpression
+                                    Type=RelativeToParent,
+                                    Property=Width,
+                                    Factor= 1}"
+                                  RelativeLayout.YConstraint="{ConstraintExpression
+                                    Type=RelativeToView,
+                                    ElementName=Stream2App,
+                                    Property=Height,
+                                    Constant=405}"
+                                    HeightRequest="200">
+                        <CarouselView.ItemTemplate>
+                            <DataTemplate>
+                                <Image Source="{Binding Url}" Aspect="AspectFill" />
+                            </DataTemplate>
+                        </CarouselView.ItemTemplate>
+                    </CarouselView>
+
+                    <!--<IndicatorView x:Name="IndicatorView"
+                           IndicatorColor="Gray"
+                           SelectedIndicatorColor="DarkGray"
+                           IndicatorSize="10"
+                           VerticalOptions="Center" />-->
+                    
+                </RelativeLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CampusSC.AppsPage"
+             >
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="umainebgimagelimagelb.png"
+                   Aspect="AspectFit" />
+            <ScrollView>
+                <FlexLayout x:Name="FlexLayout"
+                            Wrap="Wrap"
+                            JustifyContent="SpaceEvenly"
+                            Margin="3,10,3,540">
+
+                    <!--<Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3.15*" />
+                    <ColumnDefinition Width="6.15*" />
+                    <ColumnDefinition Width="3.15" />
+                    <ColumnDefinition Width="6.6" />
+                </Grid.ColumnDefinitions>-->
+
+                    <ImageButton x:Name="Black_Bear_Nation_App"
+                             Grid.Column="4"
+                             Source="BlackBearNation.png"
+                             Clicked="Black_Bear_Nation_App_Clicked"
+                             BackgroundColor="#B0D7FF"
+                             BorderColor="#AB0634"
+                             BorderWidth="1"
+                             CornerRadius="30"
+                             WidthRequest="80"
+                             HeightRequest="80" />
+                    
+                    <ImageButton x:Name="Black_Bear_Safe_App"
+                             Source="BBSafeSmall.png"
+                             Clicked="Black_Bear_Safe_App_Clicked"
+                             BackgroundColor="#003263"
+                             BorderColor="#AB0634"
+                             BorderWidth="1"
+                             CornerRadius="30"
+                             WidthRequest="80"
+                             HeightRequest="80" />
+
+                    <ImageButton x:Name="GrubHub_App"
+                             Grid.Column="4"
+                             Source="GrubHub.png"
+                             Clicked="GrubHub_App_Clicked"
+                             BackgroundColor="#B0D7d0"
+                             BorderColor="#AB0634"
+                             BorderWidth="1"
+                             CornerRadius="30"
+                             WidthRequest="80"
+                             HeightRequest="80" />
+
+                    <ImageButton x:Name="Navigate_Student_App"
+                             Grid.Column="4"
+                             Source="navigateappiOS.png"
+                             Clicked="Navigate_Student_App_Clicked"
+                             BorderColor="#AB0634"
+                             BorderWidth="1"
+                             CornerRadius="30"
+                             WidthRequest="80"
+                             HeightRequest="80" />
+
+                    <ImageButton x:Name="Stream_App"
+                             Grid.Column="4"
+                             Source="stream2.png"
+                             Clicked="Stream_App_Clicked"
+                             BorderColor="#AB0634"
+                             BorderWidth="1"
+                             CornerRadius="30"
+                             WidthRequest="80"
+                             HeightRequest="80" />
+
+                    <ImageButton x:Name="Transact_eAccounts_App"
+                                 Grid.Column="4"
+                                 Source="TransacntAndroid.png"
+                                 Clicked="Transact_eAccounts_App_Clicked"
+                                 BorderColor="#AB0634"
+                                 BorderWidth="1"
+                                 CornerRadius="30"
+                                 WidthRequest="80"
+                                 HeightRequest="80" />
+
+
+                </FlexLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

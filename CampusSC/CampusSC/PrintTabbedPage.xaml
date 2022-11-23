@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CampusSC.PrintTabbedPage"
+            xmlns:local="clr-namespace:CampusSC"
+            BackgroundColor="Transparent"
+            SelectedTabColor="#003263"
+            UnselectedTabColor="#908C89"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            android:TabbedPage.IsSmoothScrollEnabled="True"
+            android:TabbedPage.IsSwipePagingEnabled="True"
+            xmlns:iOS="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+            iOS:TabbedPage.TranslucencyMode="Translucent"
+
+            >
+    <!--Pages can be added as references or inline-->
+    <local:PrintingWebPage Title="Website" IconImageSource="baseline_language_white_24.png" />
+    <local:PrintOrderPage Title="Order" IconImageSource="baseline_local_grocery_store_white_24.png" />
+    <local:PrintFAQsPage Title="FAQs" IconImageSource="baseline_question_answer_white_24.png" />
+</TabbedPage>
