@@ -48,7 +48,7 @@ namespace CampusSC
             //        .DisplayZoomControls(true);
             //}
 
-            // Accomondate iPhone state bar.
+            // Accomondate iPhone status bar.
 
             this.Padding = new Thickness(10, Device.RuntimePlatform == Device.iOS ? 20 : 5, 10, 5);
 

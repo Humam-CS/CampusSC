@@ -62,6 +62,22 @@
                             HeightRequest="75"
                             Padding="0, 0, 50, 0"/>
 
+                    <Button x:Name="Library_Barcode_Number"
+                            Text="Library Barcode Number"
+                            TextTransform="None"
+                            TextColor="#003263"
+                            FontSize="Large"
+                            FontAttributes="Bold"
+                            ImageSource="baseline_pin_white_24"
+                            Clicked="Library_Barcode_Number_Clicked"
+                            BackgroundColor="#B0D7FF"
+                            BorderColor="#B0D7FF"
+                            BorderWidth="1"
+                            CornerRadius="5"
+                            WidthRequest="170"
+                            HeightRequest="75"
+                            Padding="0, 0, 50, 0"/>
+
                     <Button x:Name="FAQ"
                             Text="FAQs"
                             TextTransform="None"
@@ -78,7 +94,8 @@
                             HeightRequest="75"
                             Padding="0, 0, 50, 0"/>
                     <WebView Source="https://www.youtube.com/embed/1unCssrfzJU"
-                             HeightRequest="250"
+                             HeightRequest="350"
+                             VerticalOptions="FillAndExpand"
                              HorizontalOptions="FillAndExpand"
                              />
                 </StackLayout>

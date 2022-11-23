@@ -28,8 +28,6 @@ namespace CampusSC
 
         }
 
-
-
         private void MaineCard_Web_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new MaineCardPage());
@@ -50,5 +48,9 @@ namespace CampusSC
             Navigation.PushAsync(new MaineCardFAQPage());
         }
 
+        private void Library_Barcode_Number_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Library_barCode());
+        }
     }
 }

@@ -80,6 +80,9 @@ namespace CampusSC
             Navigation.PushAsync(new CampusPortalPage());
         }
 
-       
+        private void UsefulSerivces_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new UsefulServicesOptionsPage());
+        }
     }
 }

@@ -34,7 +34,6 @@ namespace CampusSC
                 Uri uri = new Uri("https://umaine.edu/parking/public-transportation/");
                 new OpenBrowser(uri);
             }
-            
         }
 
         private void Perschase_Permit_Clicked(object sender, EventArgs e)
@@ -55,6 +54,11 @@ namespace CampusSC
         private void EVCharging_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new EVCharging());
+        }
+
+        private void Parking_Status_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ParkingLotStatus());
         }
     }
 }

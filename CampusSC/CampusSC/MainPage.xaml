@@ -15,8 +15,8 @@
              >
     <ContentPage.Content>
         <Grid>
-            <Image Source="UmaineHall.jpg"
-                   Aspect="AspectFill" />
+            <Image Source="umainebgimage.png"
+                   Aspect="AspectFit" />
             <ScrollView>
                 <Grid Margin="20, 30, 22, 20"
                   RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto">
@@ -229,9 +229,25 @@
                            WidthRequest="150"
                            HeightRequest="30"/>
 
-                    
+                    <ImageButton Grid.Row="10"
+                                 x:Name="UsefulSerivces"
+                                 Source="UsefulResources"
+                                 Clicked="UsefulSerivces_Clicked"
+                                 BackgroundColor="#B0D7FF"
+                                 BorderColor="#AB0634"
+                                 BorderWidth="1"
+                                 CornerRadius="9"
+                                 WidthRequest="150"
+                                 HeightRequest="150" />
 
-                    
+                    <Label Grid.Row="11"
+                           Text="Useful Services"
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                           HorizontalTextAlignment="Center"
+                           WidthRequest="150"
+                           HeightRequest="30" />
+
                     <ImageButton Grid.Row="10"
                                  Grid.Column="1"
                                  x:Name="UsefulApps"
