@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CampusSC.UsefulServicesOptionsPage">
+    <ContentPage.Content>
+        <StackLayout Margin="3, 3, 3, 10">
+            <Label Text="Other Services"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <ScrollView>
+                <StackLayout Margin="3, 3, 3, 20">
+                    
+                    <Button x:Name="UMaine_Career_Center"
+                            Text="UM Career Center"
+                            ImageSource="baseline_business_center_white_24"
+                            Clicked="UMaine_Career_Center_Clicked"
+                            />
+
+                    <Button x:Name="The_Writing_Center"
+                            Text="The Writing Center"
+                            ImageSource="baseline_edit_square_white_24"
+                            Clicked="The_Writing_Center_Clicked"
+                            />
+
+                    <Button x:Name="Rec_Center"
+                            Text="The Recration Center"
+                            ImageSource="baseline_sports_gymnastics_white_24"
+                            Clicked="Rec_Center_Clicked"
+                            />
+
+                    <Button x:Name="InvolveME"
+                            Text="InvolveME"
+                            ImageSource="baseline_diversity_3_white_24"
+                            Clicked="InvolveME_Clicked"
+                            />
+                    
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
