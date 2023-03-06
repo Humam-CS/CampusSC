@@ -26,14 +26,14 @@ namespace CampusSC.iOS
 
     public class OpenExternalAppService : IOpenExternalAppService
     {
-        public Task<bool> LaunchApp(string uri)
+        public Task<bool> LaunchApp(string uri1, string uri2)
         {
             try
             {
-                var canOpen = UIApplication.SharedApplication.CanOpenUrl(new NSUrl(uri + "://"));
+                var canOpen = UIApplication.SharedApplication.CanOpenUrl(new NSUrl(uri1 + "://"));
                 if (!canOpen)
-                    TryLaunchingApp(uri);
-                return Task.FromResult(UIApplication.SharedApplication.OpenUrl(new NSUrl(uri + "://")));
+                    TryLaunchingApp(uri2);
+                return Task.FromResult(UIApplication.SharedApplication.OpenUrl(new NSUrl(uri1 + "://")));
             }
             catch
             {
@@ -43,7 +43,7 @@ namespace CampusSC.iOS
 
         private Task TryLaunchingApp(string uri)
         {
-            String Url = "https://apps.apple.com/us/app/app-store/";
+            string Url = "https://apps.apple.com/us/app/app-store/";
             return Launcher.TryOpenAsync(
                 new Uri(Url + uri));
         }

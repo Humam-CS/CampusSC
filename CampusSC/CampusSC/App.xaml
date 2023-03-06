@@ -17,6 +17,22 @@
                 <Setter Property="Padding" Value="0, 0, 50, 0" />
                 <Setter Property="TextTransform" Value="None" />
             </Style>
+
+            <Style TargetType="ImageButton">
+                <Setter Property="BackgroundColor" Value="#B0D7FF" />
+                <Setter Property="BorderColor" Value="#AB0634" />
+                <Setter Property="BorderWidth" Value="1" />
+                <Setter Property="CornerRadius" Value="10" />
+                <Setter Property="WidthRequest" Value="150" />
+                <Setter Property="HeightRequest" Value="150" />
+            </Style>
+
+            <!--<Style TargetType="Label">
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="WidthRequest" Value="150" />
+                <Setter Property="HeightRequest" Value="30" />
+            </Style>-->
         </ResourceDictionary>
     </Application.Resources>
 </Application>

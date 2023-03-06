@@ -32,16 +32,18 @@ namespace CampusSC
                 VerticalOptions = LayoutOptions.FillAndExpand
             };
 
-            //if ( Device.RuntimePlatform == Device.Android)
-            //{
-            //    webView.On<Android>()
-            //        .EnableZoomControls(true);
-            //    webView.On<Android>()
-            //        .DisplayZoomControls(true);
-            //}
+            if (Device.RuntimePlatform == Device.Android)
 
-            //Accomadate iPhone state bar.
-            this.Padding = new Thickness(10, (Device.RuntimePlatform == Device.iOS ? 20 : 5), 10, 5);
+                //if ( Device.RuntimePlatform == Device.Android)
+                //{
+                //    webView.On<Android>()
+                //        .EnableZoomControls(true);
+                //    webView.On<Android>()
+                //        .DisplayZoomControls(true);
+                //}
+
+                //Accomadate iPhone state bar.
+                this.Padding = new Thickness(10, (Device.RuntimePlatform == Device.iOS ? 20 : 5), 10, 5);
 
             // Buils this page.
 

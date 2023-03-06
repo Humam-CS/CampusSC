@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              x:Class="CampusSC.ParkingOptionsPage">
     <ContentPage.Content>
         <StackLayout Margin="3, 3, 3, 20">
@@ -13,31 +14,36 @@
                 <StackLayout Margin="3, 3, 3, 20" >
                     
                     <Button x:Name="Parking_Web"
-                            Text="Parking Website"
+                            Text="Parking Information"
+                            xct:IconTintColorEffect.TintColor="#003263"
                             ImageSource="baseline_public_white_24.png"
                             Clicked="Parking_Web_Clicked"
                             />
 
                     <Button x:Name="Public_transportation"
                             Text="Public Transportation"
+                            xct:IconTintColorEffect.TintColor="#003263"
                             ImageSource="baseline_directions_bus_white_24.png"
                             Clicked="Public_transportation_Clicked"
                             />
 
                     <Button x:Name="Perschase_Permit"
                             Text="Purchase Permit"
+                            xct:IconTintColorEffect.TintColor="#003263"
                             ImageSource="baseline_garage_white_24.png"
                             Clicked="Perschase_Permit_Clicked"
                             />
 
                     <Button x:Name="EVCharging"
                             Text="EV Charging"
+                            xct:IconTintColorEffect.TintColor="#003263"
                             ImageSource="baseline_electric_car_white_24.png"
                             Clicked="EVCharging_Clicked"
                             />
                     
                     <Button x:Name="Parking_Status"
                             Text="Parking Lot Status"
+                            xct:IconTintColorEffect.TintColor="#003263"
                             ImageSource="baseline_local_parking_white_24"
                             Clicked="Parking_Status_Clicked"
                             />
@@ -45,12 +51,14 @@
 
                     <Button x:Name="Campus_Map"
                             Text="Campus Map"
+                            xct:IconTintColorEffect.TintColor="#003263"
                             ImageSource="baseline_map_white_24.png"
                             Clicked="Campus_Map_Clicked"
                             />
 
                     <Button x:Name="FAQ"
                             Text="FAQs"
+                            xct:IconTintColorEffect.TintColor="#003263"
                             ImageSource="baseline_quiz_white_24.png"
                             Clicked="FAQ_Clicked"
                             />

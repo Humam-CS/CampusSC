@@ -16,12 +16,12 @@ namespace CampusSC
     {
         public DiningHours()
         {
-            //Label Header = new Label
-            //{
-            //    Text = "Dining Hours",
-            //    FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
-            //    HorizontalOptions = LayoutOptions.Center
-            //};
+            Label Header = new Label
+            {
+                Text = "Dining Hours",
+                FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
+                HorizontalOptions = LayoutOptions.Center
+            };
 
             this.ToolbarItems.Add(new ToolbarItem
             {
@@ -58,7 +58,7 @@ namespace CampusSC
             {
                 Children =
                 {
-                    //Header,
+                    Header,
                     webView
                 }
             };

@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
-using Xamarin.Forms.PlatformConfiguration;
-using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace CampusSC
@@ -35,13 +27,8 @@ namespace CampusSC
                 VerticalOptions = LayoutOptions.FillAndExpand
             };
 
-            //if (Device.RuntimePlatform == Device.Android)
-            //{
-            //    webView.On<Android>()
-            //        .EnableZoomControls(true);
-            //    webView.On<Android>()
-            //        .DisplayZoomControls(true);
-            //}
+            if (Device.RuntimePlatform == Device.Android)
+                
 
             // Accommodate iPhone state bar.
 

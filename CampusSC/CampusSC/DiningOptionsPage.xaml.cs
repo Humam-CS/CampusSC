@@ -37,22 +37,23 @@ namespace CampusSC
             Navigation.PushAsync(new DiningServiesWeb());
         }
 
-        private void Button_Clicked_1(object sender, EventArgs e)
+        private void Menus_Button_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Dining());
         }
 
-        private void GrubHubApp_Clicked(object sender, EventArgs e)
+        private void EverydayApp_Clicked(object sender, EventArgs e)
         {
             if (Device.RuntimePlatform == Device.Android)
             {
-                string appName = "com.grubhub.android";
+                string appName = "com.dynamify.sodexo";
                 result = DependencyService.Get<IAppHandler>().LaunchApp(appName);
             }
             if (Device.RuntimePlatform == Device.iOS)
             {
-                string appID = "id302920553";
-                openExternalAppService = DependencyService.Get<IOpenExternalAppService>().LaunchApp(appID);
+                string appID1 = "everyday";
+                string appID2 = "id1338702323";
+                openExternalAppService = DependencyService.Get<IOpenExternalAppService>().LaunchApp(appID1, appID2);
             }
             
             // Should add a display message to warn users about the device used if none of the above.

@@ -5,7 +5,7 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Author Humam Shawqi"
+            <Label Text="Author Humam Shawqi!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>

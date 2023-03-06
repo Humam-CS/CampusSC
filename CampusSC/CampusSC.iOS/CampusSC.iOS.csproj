@@ -77,6 +77,7 @@
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <InterfaceDefinition Include="Resources\NewLaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Resources\LaunchScreen1.storyboard" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -351,5 +352,31 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\baseline_edit_square_white_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\UMSLogoWeb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\everyday.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Defaul-568h%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Defaul-Portrait%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Defaul-Portrait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Def.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Defaul%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
 </Project>

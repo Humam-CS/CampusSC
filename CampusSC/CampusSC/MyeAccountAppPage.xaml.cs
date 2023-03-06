@@ -25,6 +25,13 @@ namespace CampusSC
                 VerticalOptions = LayoutOptions.FillAndExpand
             };
 
+            Label header = new Label
+            {
+                Text = "eAccount",
+                FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
+                HorizontalOptions = LayoutOptions.Center
+            };
+
             //if (Device.RuntimePlatform == Device.Android)
             //{
             //    webView.On<Android>()
@@ -43,6 +50,7 @@ namespace CampusSC
             {
                 Children =
                 {
+                    header,
                     webView
                 }
             };

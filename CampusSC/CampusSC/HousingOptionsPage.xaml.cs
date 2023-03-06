@@ -29,32 +29,38 @@ namespace CampusSC
 
             Carousel.ItemsSource = images;
 
-            Device.StartTimer(TimeSpan.FromSeconds(3), (Func<bool>)(() =>
+            Device.StartTimer(TimeSpan.FromSeconds(3), () =>
             {
                 Carousel.Position = (Carousel.Position + 1) % images.Count;
                 return true;
-            }));
+            });
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private void General_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new HousingServicesPage());
         }
 
-        private void Button_Clicked_1(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new LaundryViewPage());
-        }
-
-        private void Button_Clicked_2(object sender, EventArgs e)
+        private void myHousing_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new HousingLogonPage());
         }
 
-        private void Button_Clicked_3(object sender, EventArgs e)
+        private void Laundry_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new LaundryViewPage());
+        }
+
+        private void FAQs_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new HousingFAQPage());
         }
+
+        private void GetConnected_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new GetConnected());
+        }
+
 
         private void Stream2App_Clicked(object sender, EventArgs e)
         {
@@ -66,14 +72,11 @@ namespace CampusSC
 
             if (Device.RuntimePlatform == Device.iOS)
             {
-                string appID = "id1272481498";
-                openExternalAppService = DependencyService.Get<IOpenExternalAppService>().LaunchApp(appID);
+                string appID1 = "stream2";
+                string appID2 = "id1272481498";
+                openExternalAppService = DependencyService.Get<IOpenExternalAppService>().LaunchApp(appID1, appID2);
             }
         }
-
-        private void GetConnected_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new GetConnected());
-        }
+        
     }
 }

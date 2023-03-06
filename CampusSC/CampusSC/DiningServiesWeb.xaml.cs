@@ -17,12 +17,12 @@ namespace CampusSC
     {
         public DiningServiesWeb()
         {
-            //Label Header = new Label
-            //{
-            //    Text = "Dining Services Website",
-            //    FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
-            //    HorizontalOptions = LayoutOptions.Center
-            //};
+            Label Header = new Label
+            {
+                Text = "Dining Information",
+                FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
+                HorizontalOptions = LayoutOptions.Center
+            };
 
             //ToolbarItem item = new ToolbarItem();
             //item.IconImageSource = "home_white_24dp.png";
@@ -65,7 +65,7 @@ namespace CampusSC
             {
                 Children =
                 {
-                    //Header,
+                    Header,
                     webView
                 }
             };

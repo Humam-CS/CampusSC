@@ -25,14 +25,13 @@ namespace CampusSC
         public MaineCardOptionsPage()
         {
             InitializeComponent();
-
         }
 
         private void MaineCard_Web_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new MaineCardPage());
         }
-
+        
         private void MaineCard_Usage_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new MaineCardUsagePage());

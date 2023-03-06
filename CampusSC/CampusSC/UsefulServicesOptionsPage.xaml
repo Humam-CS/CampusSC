@@ -4,7 +4,7 @@
              x:Class="CampusSC.UsefulServicesOptionsPage">
     <ContentPage.Content>
         <StackLayout Margin="3, 3, 3, 10">
-            <Label Text="Other Services"
+            <Label Text="Useful Services"
                    FontSize="Large"
                    FontAttributes="Bold"
                 VerticalOptions="Center" 
@@ -25,7 +25,7 @@
                             />
 
                     <Button x:Name="Rec_Center"
-                            Text="The Recration Center"
+                            Text="The Recreation Center"
                             ImageSource="baseline_sports_gymnastics_white_24"
                             Clicked="Rec_Center_Clicked"
                             />
@@ -35,6 +35,14 @@
                             ImageSource="baseline_diversity_3_white_24"
                             Clicked="InvolveME_Clicked"
                             />
+                    <CarouselView x:Name="Carousel"
+                                  HeightRequest="240">
+                        <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding Url} " Aspect="AspectFill" />
+                        </DataTemplate>
+                        </CarouselView.ItemTemplate>
+                    </CarouselView>
                     
                 </StackLayout>
             </ScrollView>

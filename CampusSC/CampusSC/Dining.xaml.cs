@@ -32,7 +32,7 @@ namespace CampusSC
             {
                 Source = new UrlWebViewSource
                 {
-                    Url = "https://sousa.umerl.maine.edu:444/nutrition/WeeklyMenu.aspx"
+                    Url = ""
                 },
 
                 VerticalOptions = LayoutOptions.FillAndExpand,

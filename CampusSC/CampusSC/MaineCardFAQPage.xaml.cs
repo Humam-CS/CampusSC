@@ -22,6 +22,13 @@ namespace CampusSC
                 Command = new Command(() => Navigation.PushAsync(new MainPage()))
             });
 
+            Label header = new Label
+            {
+                Text = "FAQs & More",
+                FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
+                HorizontalOptions = LayoutOptions.Center
+            };
+
             Xamarin.Forms.WebView webView = new Xamarin.Forms.WebView
             {
                 Source = new UrlWebViewSource
@@ -49,6 +56,7 @@ namespace CampusSC
             {
                 Children =
                 {
+                    header,
                     webView
                 }
             };

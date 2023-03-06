@@ -5,6 +5,7 @@
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
              xmlns:local="clr-namespace:CampusSC"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              NavigationPage.HasBackButton="True"
              FlowDirection="LeftToRight">
              <!--ios:NavigationPage.PrefersLargeTitles="True"
@@ -110,6 +111,7 @@
                 <StackLayout>
                     <Button x:Name="DiningServicesWeb"
                             Text="General Information"
+                            xct:IconTintColorEffect.TintColor="#003263"
                             ImageSource="baseline_info_white_24.png"
                             Clicked="DiningServicesWeb_Clicked"
                             BorderColor="#B0D706"
@@ -118,14 +120,16 @@
 
                     <Button x:Name="DiningHours"
                             Text="Location &amp; Hours"
+                            xct:IconTintColorEffect.TintColor="#003263"
                             ImageSource="baseline_watch_later_white_24.png"
                             Clicked="DiningHours_Clicked"
                             BorderColor="#B0D706"
                             />
 
                     <Button Text="Menus &amp; Nutrition"
+                            xct:IconTintColorEffect.TintColor="#003263"
                             ImageSource="baseline_restaurant_menu_white_24.png"
-                            Clicked="Button_Clicked_1"
+                            Clicked="Menus_Button_Clicked"
                             BorderColor="#B0D706"
                             />
 
@@ -165,8 +169,8 @@
                                  AbsoluteLayout.LayoutBounds="90, 0, 5, 65" />-->
 
                         <ImageButton x:Name="GrubHubApp"
-                             Source="GrubHub.png"
-                             Clicked="GrubHubApp_Clicked"
+                             Source="everyday.png"
+                             Clicked="EverydayApp_Clicked"
                              BackgroundColor="#B0D7FF"
                              BorderColor="#AB0634"
                              BorderWidth="1"
@@ -178,8 +182,8 @@
 
                         <Image x:Name="BearRightPaw"
                                Source="bear_paw_R_4c.png"
-                               WidthRequest="100"
-                               HeightRequest="100"
+                               WidthRequest="80"
+                               HeightRequest="80"
                                AbsoluteLayout.LayoutBounds="1, 0, 80, 80"
                                AbsoluteLayout.LayoutFlags="PositionProportional">
                         </Image>
@@ -213,10 +217,28 @@
 
                     <Button x:Name="DiningFAQs"
                             Text="FAQs"
+                            xct:IconTintColorEffect.TintColor="#003263"
                             ImageSource="baseline_quiz_white_24.png"
                             Clicked="DiningFAQs_Clicked"
                             BorderColor="#B0D706"
                             />
+
+                    <BoxView x:Name="bdGradient2" Scale="6" AnchorX="2" AnchorY="0">
+
+                        <BoxView.Background>
+                            <LinearGradientBrush StartPoint="1,0" EndPoint="0,1">
+                                <GradientStop Color="#003263" Offset=".25" />
+                                <GradientStop Color="#B0D7FF" Offset=".5" />
+                                <GradientStop Color="#FFFFFF" Offset=".75" />
+                                <GradientStop Color="#908C89" Offset="1" />
+                                <GradientStop Color="#FFFFFF" Offset=".75" />
+                                <GradientStop Color="#B0D7FF" Offset=".5" />
+                                <GradientStop Color="#003263" Offset=".25" />
+                            </LinearGradientBrush>
+                        </BoxView.Background>
+
+                    </BoxView>
+
                 </StackLayout>
             </ScrollView>
         </StackLayout>

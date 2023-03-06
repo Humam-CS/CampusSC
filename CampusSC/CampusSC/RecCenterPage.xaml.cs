@@ -22,7 +22,7 @@ namespace CampusSC
 
             Label header = new Label
             {
-                Text = "The Recration Center",
+                Text = "The Recreation Center",
                 FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
                 HorizontalOptions = LayoutOptions.Center
             };

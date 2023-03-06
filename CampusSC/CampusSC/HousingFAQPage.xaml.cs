@@ -16,12 +16,12 @@ namespace CampusSC
     {
         public HousingFAQPage()
         {
-            //Label header = new Label
-            //{
-            //    Text = "FAQ",
-            //    FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
-            //    HorizontalOptions = LayoutOptions.Center
-            //};
+            Label header = new Label
+            {
+                Text = "FAQs",
+                FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
+                HorizontalOptions = LayoutOptions.Center
+            };
 
             this.ToolbarItems.Add(new ToolbarItem
             {
@@ -58,7 +58,7 @@ namespace CampusSC
             {
                 Children =
                 {
-                    //header,
+                    header,
                     webView
                 }
             };

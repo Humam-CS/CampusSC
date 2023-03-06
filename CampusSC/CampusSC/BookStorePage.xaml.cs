@@ -18,7 +18,7 @@ namespace CampusSC
         {
             Label header = new Label
             {
-                Text = "UMaine Book Store",
+                Text = "UMaine Bookstore",
                 FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
                 HorizontalOptions = LayoutOptions.Center
             };

@@ -41,7 +41,7 @@ namespace CampusSC
 
             // Enabling the zoom controls on Android.
             //if (Device.RuntimePlatform == Device.Android)
-            //{
+            //{  
             //    webView.On<Android>()
             //        .EnableZoomControls(true);
             //    webView.On<Android>()

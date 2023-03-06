@@ -7,6 +7,6 @@ namespace CampusSC.Services
 {
     public interface IOpenExternalAppService
     {
-        Task<bool> LaunchApp(string uri);
+        Task<bool> LaunchApp(string uri1, string uri2);
     }
 }

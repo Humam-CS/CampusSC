@@ -16,12 +16,12 @@ namespace CampusSC
     {
         public HousingServicesPage()
         {
-            //Label header = new Label
-            //{
-            //    Text = "UMaine Housing Services",
-            //    FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
-            //    HorizontalOptions = LayoutOptions.Center   
-            //};
+            Label header = new Label
+            {
+                Text = "UMaine Housing Services",
+                FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
+                HorizontalOptions = LayoutOptions.Center
+            };
 
             this.ToolbarItems.Add(new ToolbarItem
             {
@@ -58,7 +58,7 @@ namespace CampusSC
             {
                 Children =
                 {
-                    //header,
+                    header,
                     webView
                 }
             };

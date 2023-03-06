@@ -12,7 +12,7 @@ namespace CampusSC
 {
     public interface IAppHandler
     {
-        Task<bool> LaunchApp(String uri);
+        Task<bool> LaunchApp(string uri);
     }
     public partial class AppsPage : ContentPage
     {
@@ -33,8 +33,9 @@ namespace CampusSC
             }
             if(Device.RuntimePlatform == Device.iOS)
             {
-                string appID = "id1478305175";
-                openExternalAppService = DependencyService.Get<IOpenExternalAppService>().LaunchApp(appID);
+                string appID1 = "blackbearsafe";
+                string appID2 = "id1478305175";
+                openExternalAppService = DependencyService.Get<IOpenExternalAppService>().LaunchApp(appID1, appID2);
             }
            
         }
@@ -49,8 +50,9 @@ namespace CampusSC
 
             if (Device.RuntimePlatform == Device.iOS)
             {
-                string appID = "id1521886316";
-                openExternalAppService = DependencyService.Get<IOpenExternalAppService>().LaunchApp(appID);
+                string appID1 = "blackbearnation";
+                string appID2 = "id1521886316";
+                openExternalAppService = DependencyService.Get<IOpenExternalAppService>().LaunchApp(appID1, appID2);
             }
             
         }
@@ -64,8 +66,9 @@ namespace CampusSC
             }
             if (Device.RuntimePlatform == Device.iOS)
             {
-                string appID = "id302920553";
-                openExternalAppService = DependencyService.Get<IOpenExternalAppService>().LaunchApp(appID);
+                string appID1 = "GrubHubFoodDelivery";
+                string appID2 = "id302920553";
+                openExternalAppService = DependencyService.Get<IOpenExternalAppService>().LaunchApp(appID1, appID2);
             }
         }
 
@@ -78,8 +81,9 @@ namespace CampusSC
             }
             if (Device.RuntimePlatform == Device.iOS)
             {
-                string appID = "id950433229";
-                openExternalAppService = DependencyService.Get<IOpenExternalAppService>().LaunchApp(appID);
+                string appID1 = "student";
+                string appID2 = "id950433229";
+                openExternalAppService = DependencyService.Get<IOpenExternalAppService>().LaunchApp(appID1, appID2);
             }
         }
 
@@ -93,8 +97,9 @@ namespace CampusSC
 
             if (Device.RuntimePlatform == Device.iOS)
             {
-                string appID = "id1272481498";
-                openExternalAppService = DependencyService.Get<IOpenExternalAppService>().LaunchApp(appID);
+                string appID1 = "stream2";
+                string appID2 = "id1272481498";
+                openExternalAppService = DependencyService.Get<IOpenExternalAppService>().LaunchApp(appID1, appID2);
             }
         }
 
@@ -108,8 +113,24 @@ namespace CampusSC
 
             if (Device.RuntimePlatform == Device.iOS)
             {
-                string appID = "id1493974212";
-                openExternalAppService = DependencyService.Get<IOpenExternalAppService>().LaunchApp(appID);
+                string appID1 = "eaccounts";
+                string appID2 = "id1493974212";
+                openExternalAppService = DependencyService.Get<IOpenExternalAppService>().LaunchApp(appID1, appID2);
+            }
+        }
+
+        private void Everyday_Sodexo_App_Clicked(object sender, EventArgs e)
+        {
+            if (Device.RuntimePlatform == Device.Android)
+            {
+                string appName = "com.dynamify.sodexo";
+                result= DependencyService.Get<IAppHandler>().LaunchApp(appName);
+            }
+            if (Device.RuntimePlatform == Device.iOS)
+            {
+                string appID1 = "everyday";
+                string appID2 = "id1338702323";
+                openExternalAppService = DependencyService.Get<IOpenExternalAppService>().LaunchApp(appID1, appID2);
             }
         }
     }

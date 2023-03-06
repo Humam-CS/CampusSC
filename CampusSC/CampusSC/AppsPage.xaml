@@ -82,6 +82,16 @@
                                  WidthRequest="80"
                                  HeightRequest="80" />
 
+                    <ImageButton x:Name="Everyday_Sodexo_App"
+                                 Grid.Column="4"
+                                 Source="everyday.png"
+                                 Clicked="Everyday_Sodexo_App_Clicked"
+                                 BorderColor="#AB0634"
+                                 BorderWidth="1"
+                                 CornerRadius="30"
+                                 WidthRequest="80"
+                                 HeightRequest="80" />
+
 
                 </FlexLayout>
             </ScrollView>

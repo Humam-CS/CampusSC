@@ -16,12 +16,12 @@ namespace CampusSC
     {
         public DiningFAQs()
         {
-            //Label Header = new Label
-            //{
-            //    Text = "Dining FAQ",
-            //    FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
-            //    HorizontalOptions = LayoutOptions.Center
-            //};
+            Label Header = new Label
+            {
+                Text = "Dining FAQs",
+                FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
+                HorizontalOptions = LayoutOptions.Center
+            };
             this.ToolbarItems.Add(new ToolbarItem
             {
                 IconImageSource = "home_white_24dp.png",
@@ -57,7 +57,7 @@ namespace CampusSC
             {
                 Children =
                 {
-                    //Header,
+                    Header,
                     webView
                 }
             };

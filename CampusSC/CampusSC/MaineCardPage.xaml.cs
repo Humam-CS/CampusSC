@@ -16,12 +16,12 @@ namespace CampusSC
     {
         public MaineCardPage()
         {
-            //Label header = new Label
-            //{
-            //    Text = "Maine Card",
-            //    FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
-            //    HorizontalOptions = LayoutOptions.Center
-            //};
+            Label header = new Label
+            {
+                Text = "MaineCard",
+                FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
+                HorizontalOptions = LayoutOptions.Center
+            };
 
             this.ToolbarItems.Add(new ToolbarItem
             {
@@ -56,7 +56,7 @@ namespace CampusSC
             {
                 Children =
                 {
-                    //header,
+                    header,
                     webView
                 }
             };

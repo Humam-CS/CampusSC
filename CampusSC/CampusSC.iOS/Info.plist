@@ -4,7 +4,12 @@
 <dict>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
-		<string></string>
+		<string>blackbearsafe</string>
+		<string>blackbearnation</string>
+		<string>grubhubfood</string>
+		<string>stream2</string>
+		<string>eaccounts</string>
+		<string>navigate</string>
 	</array>
 	<key>UIDeviceFamily</key>
 	<array>
@@ -32,8 +37,6 @@
 	<string>1.0</string>
 	<key>CFBundleName</key>
 	<string>ButtonTutorial</string>
-	<key>XSAppIconAssets</key>
-	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>
@@ -58,10 +61,24 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 		</dict>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>URL Type 2</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+		</dict>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>URL Type 3</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+		</dict>
 	</array>
 	<key>CFBundleDisplayName</key>
 	<string>CampusSC</string>
 	<key>UILaunchStoryboardName</key>
 	<string>NewLaunchScreen</string>
+	<key>XSAppIconAssets</key>
+	<string>Assets.xcassets/AppIcon.appiconset</string>
 </dict>
 </plist>
